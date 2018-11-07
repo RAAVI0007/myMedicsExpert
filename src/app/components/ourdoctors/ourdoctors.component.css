@@ -1,0 +1,20 @@
+.modal-body{
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+
+.btn-adj{
+    padding-bottom: 20px ;
+}
+
+
+.space{
+   background-color: aquamarine;
+}
+
+.card-text {
+    column-span: 2;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 10px;
+    font-weight: 100;
+}

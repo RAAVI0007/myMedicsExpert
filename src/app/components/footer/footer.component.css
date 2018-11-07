@@ -1,0 +1,40 @@
+ul {
+  list-style: none;
+  border-bottom: 0px;
+}
+
+ul li a i {
+  text-align: center;
+  margin-right: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+ul li a {
+  text-align: center;
+  margin-right: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+ul li a i:hover {
+  opacity: .7;
+}
+
+ul li a:hover {
+  opacity: .7;
+}
+
+ul li:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 75%;
+  margin: 5px;
+  background: #6c757d !important;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+}

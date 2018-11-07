@@ -1,0 +1,97 @@
+<div class="container text-change">
+  <div class="row">
+
+    <div class="col-md-12">
+
+      <h1 class="h2 page-title">Paitent Details</h1>
+    </div>
+  </div>
+
+  <div class="row alert  border border-secondary">
+    <div class="col-md-4 btw-line">
+      <span class="text-info font-weight-bold ">DOB : </span> {{ dob }}
+    </div>
+    <div class="col-md-4 btw-line">
+      <span class="text-info font-weight-bold ">City : </span> {{ city }}
+    </div>
+    <div class="col-md-4">
+      <span class="text-info font-weight-bold "> Country : </span> {{ country }}
+    </div>
+
+
+  </div>
+
+  <div class="row border border-secondary alert">
+    <div class="col-md-6 btw-line">
+      <span class="text-info font-weight-bold ">Diagnosis/ Reason for Consultation: </span>
+
+
+      <ol type="1">
+        <li *ngFor="let item of items">
+          {{item}}
+        </li>
+      </ol>
+      <div class="form-group shadow-textarea">
+        <label for="exampleFormControlTextarea">
+          <span class="text-info font-weight-bold ">Diagnosis( if any) </span>
+        </label>
+
+        <textarea class="form-control z-depth-1" id="exampleFormControlTextarea" rows="3" readonly>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+          dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+          specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+
+        </textarea>
+      </div>
+      <div class="form-group shadow-textarea">
+        <label for="exampleFormControlTextarea">
+          <span class="text-info font-weight-bold ">Any Specific questions</span>
+        </label>
+
+        <textarea class="form-control z-depth-1" id="exampleFormControlTextarea" rows="3" readonly> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+          It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+          with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+        </textarea>
+      </div>
+      <span class="text-info font-weight-bold ">Attachements </span>
+
+
+      <ol type="1">
+        <li *ngFor="let attach of attachments">
+          <a href="#"> {{attach}} </a>
+        </li>
+      </ol>
+
+
+
+    </div>
+    <div class="col-md-6">
+
+      <div class="form-group shadow-textarea">
+        <label for="exampleFormControlTextarea">
+          <span class="text-info font-weight-bold ">Second Opinion Recommendations</span>
+        </label>
+
+        <textarea class="form-control z-depth-1" id="exampleFormControlTextarea" rows="10" readonly>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+          dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+          specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+          essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+          passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+        </textarea>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+          <div class="col-md-6"></div>
+          <div class="col-md-6">
+            <button type="button" class="btn btn-primary float-right sharp-edges">Submit</button>
+            <button type="button" class="btn btn-secondary float-right sharp-edges">Draft</button> 
+            <span class="skype-button rectangle" data-contact-id="yakkantisatishreddy" data-text="Skype"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

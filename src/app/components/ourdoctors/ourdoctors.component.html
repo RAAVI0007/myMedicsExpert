@@ -1,0 +1,180 @@
+<h2>Our Doctors</h2>
+  <div class="row"> 
+    <div class="card" style="width:350px">
+      <img class="card-img-bottom" [src]="images[0]" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Doctor-1</h4>
+        <p class="card-text">With more than three decades of experience in radiation oncology, he is a pioneer who introduced many path breaking
+          procedures such as IMRT and IGRT to south India. </p>
+
+        <button type="button" class="btn btn-primary" (click)="open(content3)">Check Complete Profile</button>
+
+        <ng-template #content3 let-modal>
+          <div class=" modal-header ">
+            <h4 class="modal-title " id="modal-basic-title ">Doctor-1 Profile</h4>
+          </div>
+          <div class="modal-body">
+            <ul class="fa-ul">
+              <li>
+                <i class="fa-li fa fa-check-square"></i>He completed his MBBS with distinction from Khammam Medical College in 1975.</li>
+              <li>
+                <i class="fa-li fa fa-check-square"></i>MD from AIIMS in 1981.</li>
+
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button " class="btn btn-outline-dark" (click)="modal.close('Save click') ">Book Appointment</button>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <button type="button " class="btn btn-outline-dark" (click)="modal.close('Save click') ">Close</button>
+
+          </div>
+
+        </ng-template>
+      </div>
+    </div>
+    <div>&nbsp;</div>
+
+    <div class="card" style="width:350px">
+      <img class="card-img-bottom" [src]="images[1]" alt="Card image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">Doctor-2</h4>
+        <p class="card-text">Dr. Mirza Athar Ali has more than seven years of experience with expertise in Electronic medical records and great
+          ability to deliver High Precision Radiotherapy treatment. </p>
+        <button type="button" class="btn btn-primary" (click)="open(content)">Check Complete Profile</button>
+
+        <ng-template #content let-modal>
+          <div class=" modal-header ">
+            <h4 class="modal-title " id="modal-basic-title ">Doctor-2 Profile</h4>
+          </div>
+          <div class="modal-body">
+            <ul class="fa-ul">
+              <li>
+                <i class="fa-li fa fa-check-square"></i>He completed his MBBS with distinction from Kurnool Medical College in 1975.</li>
+              <li>
+                <i class="fa-li fa fa-check-square"></i>MD from AIIMS in 1981.</li>
+              <li>
+                <i class="fa-li fa fa-spinner fa-spin"></i>He has also completed training programs at Royal Marsden Medical Hospital in London and Booth Memorial
+                Medical Center in New York.</li>
+              <li>
+                <i class="fa-li fa fa-square"></i>Thesis during post graduation (MD): “Estimation of LQ model parameter α/β and Biological Effective Dose
+                (BED) for acute normal tissue reactions in Head and Neck malignancies treated by Conventional and Hyper-fractionated
+                External Beam Radiotherapy”.</li>
+            </ul>
+          </div>
+          <div class="modal-footer ">
+            <button type="button " class="btn btn-outline-dark " (click)="modal.close('Save click') ">Close</button>
+          </div>
+        </ng-template>
+      </div>
+    </div>
+    <div>&nbsp;</div>
+
+    <div class="card " style="width:350px ">
+      <img class="card-img-bottom " [src]="images[2] " alt="Card image " style="width:100% ">
+      <div class="card-body ">
+        <h4 class="card-title ">Doctor-3</h4>
+        <p class="card-text">Dr. Prabhakar has more than 7years of experience in Radiation Oncology and is a trusted clinician in his field. </p>
+        <button type="button" class="btn btn-primary" (click)="open(content1)">Check Complete Profile</button>
+
+        <ng-template #content1 let-modal>
+          <div class=" modal-header ">
+            <h4 class="modal-title " id="modal-basic-title ">Doctor-3 Profile</h4>
+          </div>
+          <div class="modal-body ">
+            <ul class="fa-ul">
+              <li>
+                <i class="fa-li fa fa-check-square"></i>He completed his MBBS with distinction from Hyd Medical College in 1975.</li>
+              <li>
+                <i class="fa-li fa fa-check-square"></i>MD from AIIMS in 1981.</li>
+              <li>
+                <i class="fa-li fa fa-spinner fa-spin"></i>He has also completed training programs at Royal Marsden Medical Hospital in London and Booth Memorial
+                Medical Center in New York.</li>
+              <li>
+                <i class="fa-li fa fa-square"></i>Thesis during post graduation (MD): “Estimation of LQ model parameter α/β and Biological Effective Dose
+                (BED) for acute normal tissue reactions in Head and Neck malignancies treated by Conventional and Hyper-fractionated
+                External Beam Radiotherapy”.</li>
+            </ul>
+          </div>
+          <div class="modal-footer ">
+            <button type="button " class="btn btn-outline-dark " (click)="modal.close('Save click') ">Close</button>
+          </div>
+        </ng-template>
+        <div>
+        </div>
+
+      </div>
+    </div>
+</div>
+    <br>
+    <!-- <div class="container">
+      <h2>Our Doctors-NGFOR-First</h2>
+      <div class="row">
+        <li *ngFor="let presentation of doctors">
+          <div class="card" style="width:350px">
+            <img class="card-img-bottom" src={{presentation.imagepath}} alt="Card image" style="width:100%;height: 100%">
+            <div class="card-body">
+              <h4 class="card-title">{{ presentation.idNum }}</h4>
+              <p class="card-text">Sr.Oncologist </p>
+            </div>
+          </div>
+        </li>
+      </div>
+    </div> -->
+
+
+    <!-- <div class="container">
+      <h2>Our Doctors-NGFOR-second</h2>
+      <div class="row">
+        <div class="card" style="width:350px" *ngFor="let presentation of doctors">
+          <img class="card-img-bottom" src={{presentation.imagepath}} alt="Card image" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title">{{ presentation.idNum }}</h4>
+            <p class="card-text">Sr.Oncologist </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+
+    <!-- <div class="container">
+      <h2>Our Doctors-NGFOR2</h2>
+      <div class="row">
+        <div *ngFor="let doc of doctors">
+          <div class="card" style="width:350px">
+            <img class="card-img-bottom" [src]="images[0]" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">Doctor-1</h4>
+              <p class="card-text">Sr.Oncologist </p>
+              <button type="button" class="btn btn-primary" (click)="open(content)">Check Complete Profile</button>
+
+              <ng-template #{{doc.idNum}} let-modal>
+                <div class=" modal-header ">
+                  <h4 class="modal-title " id="modal-basic-title ">Doctor-2 Profile</h4>
+                </div>
+                <div class="modal-body">
+                  <ul class="fa-ul">
+                    <li>
+                      <i class="fa-li fa fa-check-square"></i>He completed his MBBS with distinction from Khammam Medical College in 1975.</li>
+                    <li>
+                      <i class="fa-li fa fa-check-square"></i>MD from AIIMS in 1981.</li>
+                    <li>
+                      <i class="fa-li fa fa-spinner fa-spin"></i>He has also completed training programs at Royal Marsden Medical Hospital in London and Booth Memorial
+                      Medical Center in New York.</li>
+                  </ul>
+                </div>
+                <div class="modal-footer ">
+                  <button type="button " class="btn btn-outline-dark " (click)="modal.close('Save click') ">Close</button>
+                </div>
+              </ng-template>
+            </div>
+          </div>
+          <div>&nbsp;</div>
+        </div> --> 

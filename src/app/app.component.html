@@ -1,0 +1,139 @@
+<header>
+  <nav class="navbar navbar-expand-sm fixed-top navbar-light navbar-fixed-top"> 
+          <div class="collapse navbar-collapse navbar-fixed-top" id="navbarNav" role="navigation">
+            <b>My Medics Expert</b>
+            <i class="fa fa-plus-square" style="font-size:25px;color:red"></i>
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"><b>Home</b>
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/aboutus"><b>About Us</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/services"><b>Specializations</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/appointment"><b>Appointment</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/gallery"><b>Gallery</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/ourdoctors"><b>Our Doctors</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/contactus"><b>Contact</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/faqs"><b>FAQS</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="/patient"><b>Patient</b></a>
+                </li>
+              </ul>
+            </div> 
+  </nav>
+</header>
+<!--<div class="home-bg-nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+      <div class="collapse navbar-collapse home-bg-nav" id="navbarNav" #stickyMenu [class.sticky] = "sticky">
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/aboutus">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/services">Specializations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/appointment">Appointment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/ourdoctors">Our Doctors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contactus">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/faqs">FAQS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/patient">Patient</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div> -->
+  
+ <!-- <div>
+    <ngb-carousel *ngIf="images">
+      <ng-template ngbSlide>
+        <img width="100%" [src]="images[0]"  alt="Random first slide">
+        <div class="carousel-caption">
+          <div class="caption-one">
+            <h5 style="color:rgb(0, 0, 0);display:inline;pading-left:0px">Medical Services That You Can Trust</h5>
+            <p style="color: rgb(41, 38, 38)">Lorem ipsum dolor sit amet, et vel tota referrentur. Te vix iusto suavitate, apeirian definiebas an est, ea aperiri
+              gloriatur nam. No eos ludus aliquam principes, ad his quot electram reprimique, mea no malis mucius. </p>
+            <br>
+            <a href="#" class="btn btn-primary btn-lg hvr-underline-from-left" role="button">Read More</a>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <img width="100%"  [src]="images[1]" alt="Random first slide">
+        <div class="carousel-caption">
+          <div class="caption-one">
+            <h5 style="color:rgb(0, 0, 0);display:inline;pading-left:0px">We Care for You</h5>
+            <p style="color: rgb(41, 38, 38)">Lorem ipsum dolor sit amet, et vel tota referrentur. Te vix iusto suavitate, apeirian definiebas an est, ea aperiri
+              gloriatur nam. No eos ludus aliquam principes, ad his quot electram reprimique, mea no malis mucius. </p>
+            <br>
+            <a href="#" class="btn btn-primary btn-lg hvr-underline-from-left" role="button">Read More</a>
+          </div>
+        </div>
+      </ng-template>
+    </ngb-carousel> 
+  </div>-->
+
+
+  <!--<ng-template ngbSlide>
+    <img [src]="images[2]" alt="Random third slide" width="100%" height="100%" class="product-image">
+    <img src="/src/images/logo-white.png" alt="Random third slide"  class="plus-image">
+    <div class="caption">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, quisquam?</p>
+  </div>
+  </ng-template>
+</ngb-carousel>-->
+
+  <!--<div class="row" id="box-search">
+  <div >
+    <img [src]="images[2]" alt="Random third slide" width="100%" height="100%" class="product-image">
+    <img src="/src/images/logo-white.png" alt="Random third slide"  class="plus-image">
+   
+  </div>
+</div>-->
+
+ 
+  <!--<div class="home-bg-img"> 
+<div class="home-bg-img">
+    <div class="homenav">
+        <a href="#about">About Us</a>
+        <a href="#contact">FAQS</a>
+        <a href="#news">OUR DOCTORS</a>
+      <a href="#home">HOW IT WORKS </a>
+    </div>
+</div> --> 
+    <!--<app-appointment></app-appointment>-->
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+    <app-footer></app-footer>

@@ -1,0 +1,91 @@
+.home-bg-img {
+  background-image: url("https://firstopinionapp.com/wp-content/uploads/2014/05/first-opinion-doctor@2x1.jpg");
+  width: 100%;
+}
+ 
+ 
+.caption-one {
+  background-color: #cecece;
+  font-family: 'Arial Narrow Bold';
+  opacity: 0.75;
+  padding-left: 0%;
+  margin-right: 2%;
+  padding-bottom: 1%;
+  width: 60%;
+  height: 30%;
+}
+
+.thumbnail {
+  position: relative;
+}
+
+.caption {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+}
+
+.container {
+  position: absolute;
+  margin: 10%;
+  width: auto;
+}
+
+
+html,
+body {
+  height: 100%;
+}
+
+.first {
+  padding-top: 140px;
+  height: 100vh;
+  min-height: 400px;
+  background-size: cover;
+  background-image: url("https://serving.photos.photobox.com/34156944745394a28ce5b0df584c8ce84cf0eeb36cb368813a415fb0ad4b4ec8c698430b.jpg");
+}
+
+.affix {
+  -webkit-transition: padding 0.2s ease-out;
+  -moz-transition: padding 0.2s ease-out;
+  -o-transition: padding 0.2s ease-out;
+  transition: padding 0.2s ease-out;
+}
+
+header {
+  height: 80vh;
+  min-height: 400px;
+  background-size: cover; 
+  /*background-image: url('/src/images/homeImg.jpg');*/
+  background-image: url("https://serving.photos.photobox.com/933719377091772aa6a0d63491226edfe3633f7f80d1af2cdf245fa1db6ef4e986b81681.jpg");
+}
+
+.affix-top .nav>li>a {
+  color: #000;
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: gray !important;
+  transition: background-color 200ms linear;
+}
+
+
+section {
+  height: calc(90% - 50px);
+  height: 90vh;
+}
+
+li a {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+li a:hover,
+li a:focus { 
+  background-color: #4682B4;
+  color: white !important;
+  border-radius: 5px;
+}

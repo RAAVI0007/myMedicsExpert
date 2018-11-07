@@ -1,0 +1,10 @@
+.h1{
+    color: white;
+   }
+   .contact_us{
+   
+       background-image: url("/src/images/11.jpg");
+      background-color: #cccccc;
+      background-repeat: repeat;
+      height: 550px;
+   }
